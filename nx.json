@@ -1,34 +1,21 @@
 {
-  "implicitDependencies": {
-    "angular.json": "*",
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
+    "implicitDependencies": {
+        "angular.json": "*",
+        "package.json": { "dependencies": "*", "devDependencies": "*" },
+        "tsconfig.base.json": "*",
+        "tslint.json": "*",
+        ".eslintrc.json": "*",
+        "nx.json": "*"
     },
-    "tsconfig.base.json": "*",
-    "tslint.json": "*",
-    ".eslintrc.json": "*",
-    "nx.json": "*"
-  },
-  "affected": {
-    "defaultBase": "master"
-  },
-  "npmScope": "bluebits",
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
-      }
-    }
-  },
-  "projects": {
-    "ngshop": {
-      "tags": []
+    "affected": { "defaultBase": "master" },
+    "npmScope": "bluebits",
+    "tasksRunnerOptions": {
+        "default": { "runner": "@nrwl/workspace/tasks-runners/default", "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] } }
     },
-    "ngshop-e2e": {
-      "tags": [],
-      "implicitDependencies": ["ngshop"]
+    "projects": {
+        "ngshop": { "tags": [] },
+        "ngshop-e2e": { "tags": [], "implicitDependencies": ["ngshop"] },
+        "admin": { "tags": [] },
+        "admin-e2e": { "tags": [], "implicitDependencies": ["admin"] }
     }
-  }
 }
