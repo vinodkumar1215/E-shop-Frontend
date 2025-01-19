@@ -1,15 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'bluebits-sidebar',
+  selector: 'admin-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
-export class SidebarComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class SidebarComponent {
 }
